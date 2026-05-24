@@ -1,0 +1,70 @@
+<mujoco model="human_arm_demo">
+  <compiler angle="degree" autolimits="true"/>
+
+  <option timestep="0.01" gravity="0 0 -9.81"/>
+
+  <visual>
+    <headlight diffuse="0.8 0.8 0.8" ambient="0.25 0.25 0.25" specular="0.2 0.2 0.2"/>
+    <rgba haze="0.15 0.2 0.25 1"/>
+  </visual>
+
+  <asset>
+    <texture type="skybox" builtin="gradient" rgb1="0.95 0.97 1" rgb2="0.73 0.84 0.95" width="256" height="256"/>
+    <material name="bone" rgba="0.87 0.75 0.62 1"/>
+    <material name="joint" rgba="0.33 0.36 0.42 1"/>
+    <material name="floor" rgba="0.88 0.9 0.92 1"/>
+  </asset>
+
+  <default>
+    <default class="arm">
+      <joint damping="2.5" armature="0.02" limited="true"/>
+      <geom type="capsule" density="950" friction="0.8 0.1 0.1" material="bone"/>
+    </default>
+    <default class="servo">
+      <position kp="35" kv="7" ctrlrange="-2 2" forcerange="-80 80"/>
+    </default>
+  </default>
+
+  <worldbody>
+    <light pos="0 0 2.2" dir="0 0 -1"/>
+    <geom name="floor" type="plane" pos="0 0 -0.75" size="2 2 0.1" material="floor"/>
+
+    <body name="torso_anchor" pos="0 0 0.55">
+      <geom name="pedestal" type="cylinder" pos="0 0 -0.18" size="0.08 0.18" material="joint"/>
+      <geom name="shoulder_socket" type="sphere" size="0.07" material="joint"/>
+
+      <body name="upper_arm">
+        <joint name="shoulder_pitch" class="arm" type="hinge" axis="1 0 0" range="-90 90"/>
+        <joint name="shoulder_yaw" class="arm" type="hinge" axis="0 1 0" range="-110 110"/>
+        <joint name="shoulder_roll" class="arm" type="hinge" axis="0 0 1" range="-80 80"/>
+        <geom name="upper_arm_geom" class="arm" fromto="0 0 0 0 0 -0.28" size="0.045"/>
+
+        <body name="forearm" pos="0 0 -0.28">
+          <geom name="elbow_joint" type="sphere" size="0.045" material="joint"/>
+          <joint name="elbow_flex" class="arm" type="hinge" axis="0 1 0" range="0 140"/>
+          <geom name="forearm_geom" class="arm" fromto="0 0 0 0 0 -0.26" size="0.038"/>
+
+          <body name="hand" pos="0 0 -0.26">
+            <geom name="wrist_joint" type="sphere" size="0.035" material="joint"/>
+            <joint name="wrist_pitch" class="arm" type="hinge" axis="1 0 0" range="-55 55"/>
+            <joint name="wrist_yaw" class="arm" type="hinge" axis="0 1 0" range="-35 35"/>
+            <geom name="hand_geom" class="arm" fromto="0 0 0 0 0 -0.16" size="0.03"/>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+
+  <actuator>
+    <position name="shoulder_pitch_servo" class="servo" joint="shoulder_pitch" ctrlrange="-1.4 1.4"/>
+    <position name="shoulder_yaw_servo" class="servo" joint="shoulder_yaw" ctrlrange="-1.8 1.8"/>
+    <position name="shoulder_roll_servo" class="servo" joint="shoulder_roll" ctrlrange="-1.2 1.2"/>
+    <position name="elbow_flex_servo" class="servo" joint="elbow_flex" ctrlrange="0 2.3"/>
+    <position name="wrist_pitch_servo" class="servo" joint="wrist_pitch" ctrlrange="-0.9 0.9"/>
+    <position name="wrist_yaw_servo" class="servo" joint="wrist_yaw" ctrlrange="-0.6 0.6"/>
+  </actuator>
+
+  <keyframe>
+    <key name="home" qpos="0 0 0 0.8 0 0"/>
+  </keyframe>
+</mujoco>
