@@ -1,0 +1,3939 @@
+{
+  "modelName": "human_arm_demo",
+  "sourceXml": "mujoco_arm_demo/arm.xml",
+  "referenceMaxElevationDeg": 90.0,
+  "modelMaxElevationDeg": 110.0,
+  "notes": "This MuJoCo scaffold directly drives the browser pose data. In its current form, the upper-arm envelope tops out at roughly 110 degrees of elevation, so it should be treated as a spatial shoulder prototype rather than a full clinical 180-degree flexion model.",
+  "namedSampleIndices": {
+    "baseline": 0,
+    "forward_reach": 36,
+    "reference_ceiling": 72,
+    "model_limit": 108
+  },
+  "samples": [
+    {
+      "index": 0,
+      "joints": {
+        "shoulderPitchDeg": 0.0,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 45.837,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 0.0,
+        "direction": [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.0,
+          0.27
+        ],
+        "hand": [
+          -0.186513,
+          0.0,
+          0.088856
+        ]
+      }
+    },
+    {
+      "index": 1,
+      "joints": {
+        "shoulderPitchDeg": 1.273,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 46.075,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 1.273,
+        "direction": [
+          0.0,
+          0.02222,
+          -0.999753
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.006222,
+          0.270069
+        ],
+        "hand": [
+          -0.187266,
+          0.010229,
+          0.089749
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "joints": {
+        "shoulderPitchDeg": 2.546,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 46.314,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 2.546,
+        "direction": [
+          0.0,
+          0.04443,
+          -0.999013
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.01244,
+          0.270276
+        ],
+        "hand": [
+          -0.188016,
+          0.020419,
+          0.090871
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "joints": {
+        "shoulderPitchDeg": 3.82,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 46.553,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 3.82,
+        "direction": [
+          0.0,
+          0.066617,
+          -0.997779
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.018653,
+          0.270622
+        ],
+        "hand": [
+          -0.188762,
+          0.030564,
+          0.092221
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "joints": {
+        "shoulderPitchDeg": 5.093,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 46.792,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 5.093,
+        "direction": [
+          0.0,
+          0.088772,
+          -0.996052
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.024856,
+          0.271105
+        ],
+        "hand": [
+          -0.189506,
+          0.040658,
+          0.093798
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "joints": {
+        "shoulderPitchDeg": 6.366,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 47.03,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 6.366,
+        "direction": [
+          0.0,
+          0.110883,
+          -0.993834
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.031047,
+          0.271727
+        ],
+        "hand": [
+          -0.190246,
+          0.050698,
+          0.0956
+        ]
+      }
+    },
+    {
+      "index": 6,
+      "joints": {
+        "shoulderPitchDeg": 7.639,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 47.269,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 7.639,
+        "direction": [
+          0.0,
+          0.132939,
+          -0.991124
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.037223,
+          0.272485
+        ],
+        "hand": [
+          -0.190982,
+          0.060676,
+          0.097626
+        ]
+      }
+    },
+    {
+      "index": 7,
+      "joints": {
+        "shoulderPitchDeg": 8.913,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 47.508,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 8.913,
+        "direction": [
+          0.0,
+          0.154929,
+          -0.987926
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.04338,
+          0.273381
+        ],
+        "hand": [
+          -0.191716,
+          0.07059,
+          0.099874
+        ]
+      }
+    },
+    {
+      "index": 8,
+      "joints": {
+        "shoulderPitchDeg": 10.186,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 47.746,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 10.186,
+        "direction": [
+          0.0,
+          0.176843,
+          -0.984239
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.049516,
+          0.274413
+        ],
+        "hand": [
+          -0.192446,
+          0.080433,
+          0.102341
+        ]
+      }
+    },
+    {
+      "index": 9,
+      "joints": {
+        "shoulderPitchDeg": 11.459,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 47.985,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 11.459,
+        "direction": [
+          0.0,
+          0.198669,
+          -0.980067
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.055627,
+          0.275581
+        ],
+        "hand": [
+          -0.193173,
+          0.090201,
+          0.105026
+        ]
+      }
+    },
+    {
+      "index": 10,
+      "joints": {
+        "shoulderPitchDeg": 12.732,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 48.224,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 12.732,
+        "direction": [
+          0.0,
+          0.220398,
+          -0.97541
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.061711,
+          0.276885
+        ],
+        "hand": [
+          -0.193896,
+          0.099888,
+          0.107927
+        ]
+      }
+    },
+    {
+      "index": 11,
+      "joints": {
+        "shoulderPitchDeg": 14.006,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 48.463,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 14.006,
+        "direction": [
+          0.0,
+          0.242017,
+          -0.970272
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.067765,
+          0.278324
+        ],
+        "hand": [
+          -0.194616,
+          0.109491,
+          0.111041
+        ]
+      }
+    },
+    {
+      "index": 12,
+      "joints": {
+        "shoulderPitchDeg": 15.279,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 48.701,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 15.279,
+        "direction": [
+          0.0,
+          0.263517,
+          -0.964655
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.073785,
+          0.279897
+        ],
+        "hand": [
+          -0.195333,
+          0.119003,
+          0.114366
+        ]
+      }
+    },
+    {
+      "index": 13,
+      "joints": {
+        "shoulderPitchDeg": 16.552,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 48.94,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 16.552,
+        "direction": [
+          0.0,
+          0.284887,
+          -0.958561
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.079768,
+          0.281603
+        ],
+        "hand": [
+          -0.196046,
+          0.128422,
+          0.1179
+        ]
+      }
+    },
+    {
+      "index": 14,
+      "joints": {
+        "shoulderPitchDeg": 17.825,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 49.179,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 17.825,
+        "direction": [
+          0.0,
+          0.306117,
+          -0.951994
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.085713,
+          0.283442
+        ],
+        "hand": [
+          -0.196756,
+          0.137741,
+          0.121639
+        ]
+      }
+    },
+    {
+      "index": 15,
+      "joints": {
+        "shoulderPitchDeg": 19.099,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 49.418,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 19.099,
+        "direction": [
+          0.0,
+          0.327195,
+          -0.944957
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.091615,
+          0.285412
+        ],
+        "hand": [
+          -0.197463,
+          0.146956,
+          0.125581
+        ]
+      }
+    },
+    {
+      "index": 16,
+      "joints": {
+        "shoulderPitchDeg": 20.372,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 49.656,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 20.372,
+        "direction": [
+          0.0,
+          0.348111,
+          -0.937453
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.097471,
+          0.287513
+        ],
+        "hand": [
+          -0.198166,
+          0.156064,
+          0.129724
+        ]
+      }
+    },
+    {
+      "index": 17,
+      "joints": {
+        "shoulderPitchDeg": 21.645,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 49.895,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 21.645,
+        "direction": [
+          0.0,
+          0.368856,
+          -0.929487
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.10328,
+          0.289744
+        ],
+        "hand": [
+          -0.198865,
+          0.165059,
+          0.134065
+        ]
+      }
+    },
+    {
+      "index": 18,
+      "joints": {
+        "shoulderPitchDeg": 22.918,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 50.134,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 22.918,
+        "direction": [
+          0.0,
+          0.389418,
+          -0.921061
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.109037,
+          0.292103
+        ],
+        "hand": [
+          -0.199561,
+          0.173937,
+          0.1386
+        ]
+      }
+    },
+    {
+      "index": 19,
+      "joints": {
+        "shoulderPitchDeg": 24.192,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 50.373,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 24.192,
+        "direction": [
+          0.0,
+          0.409789,
+          -0.912181
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.114741,
+          0.294589
+        ],
+        "hand": [
+          -0.200254,
+          0.182694,
+          0.143326
+        ]
+      }
+    },
+    {
+      "index": 20,
+      "joints": {
+        "shoulderPitchDeg": 25.465,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 50.611,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 25.465,
+        "direction": [
+          0.0,
+          0.429956,
+          -0.90285
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.120388,
+          0.297202
+        ],
+        "hand": [
+          -0.200943,
+          0.191326,
+          0.148241
+        ]
+      }
+    },
+    {
+      "index": 21,
+      "joints": {
+        "shoulderPitchDeg": 26.738,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 50.85,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 26.738,
+        "direction": [
+          0.0,
+          0.449912,
+          -0.893073
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.125975,
+          0.29994
+        ],
+        "hand": [
+          -0.201629,
+          0.199829,
+          0.15334
+        ]
+      }
+    },
+    {
+      "index": 22,
+      "joints": {
+        "shoulderPitchDeg": 28.011,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 51.089,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 28.011,
+        "direction": [
+          0.0,
+          0.469645,
+          -0.882855
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.131501,
+          0.302801
+        ],
+        "hand": [
+          -0.202311,
+          0.208199,
+          0.158621
+        ]
+      }
+    },
+    {
+      "index": 23,
+      "joints": {
+        "shoulderPitchDeg": 29.285,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 51.327,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 29.285,
+        "direction": [
+          0.0,
+          0.489147,
+          -0.872202
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.136961,
+          0.305784
+        ],
+        "hand": [
+          -0.20299,
+          0.216431,
+          0.164081
+        ]
+      }
+    },
+    {
+      "index": 24,
+      "joints": {
+        "shoulderPitchDeg": 30.558,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 51.566,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 30.558,
+        "direction": [
+          0.0,
+          0.508407,
+          -0.861117
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.142354,
+          0.308887
+        ],
+        "hand": [
+          -0.203665,
+          0.224522,
+          0.169715
+        ]
+      }
+    },
+    {
+      "index": 25,
+      "joints": {
+        "shoulderPitchDeg": 31.831,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 51.805,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 31.831,
+        "direction": [
+          0.0,
+          0.527415,
+          -0.849608
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.147676,
+          0.31211
+        ],
+        "hand": [
+          -0.204337,
+          0.232468,
+          0.17552
+        ]
+      }
+    },
+    {
+      "index": 26,
+      "joints": {
+        "shoulderPitchDeg": 33.104,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 52.044,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 33.104,
+        "direction": [
+          0.0,
+          0.546164,
+          -0.837678
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.152926,
+          0.31545
+        ],
+        "hand": [
+          -0.205005,
+          0.240266,
+          0.181492
+        ]
+      }
+    },
+    {
+      "index": 27,
+      "joints": {
+        "shoulderPitchDeg": 34.377,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 52.282,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 34.377,
+        "direction": [
+          0.0,
+          0.564642,
+          -0.825336
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.1581,
+          0.318906
+        ],
+        "hand": [
+          -0.205669,
+          0.247912,
+          0.187628
+        ]
+      }
+    },
+    {
+      "index": 28,
+      "joints": {
+        "shoulderPitchDeg": 35.651,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 52.521,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 35.651,
+        "direction": [
+          0.0,
+          0.582842,
+          -0.812585
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.163196,
+          0.322476
+        ],
+        "hand": [
+          -0.20633,
+          0.255403,
+          0.193924
+        ]
+      }
+    },
+    {
+      "index": 29,
+      "joints": {
+        "shoulderPitchDeg": 36.924,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 52.76,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 36.924,
+        "direction": [
+          0.0,
+          0.600754,
+          -0.799434
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.168211,
+          0.326159
+        ],
+        "hand": [
+          -0.206988,
+          0.262734,
+          0.200375
+        ]
+      }
+    },
+    {
+      "index": 30,
+      "joints": {
+        "shoulderPitchDeg": 38.197,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 52.999,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 38.197,
+        "direction": [
+          0.0,
+          0.61837,
+          -0.785887
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.173144,
+          0.329952
+        ],
+        "hand": [
+          -0.207641,
+          0.269904,
+          0.206978
+        ]
+      }
+    },
+    {
+      "index": 31,
+      "joints": {
+        "shoulderPitchDeg": 39.47,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 53.237,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 39.47,
+        "direction": [
+          0.0,
+          0.63568,
+          -0.771953
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.17799,
+          0.333853
+        ],
+        "hand": [
+          -0.208292,
+          0.276909,
+          0.213729
+        ]
+      }
+    },
+    {
+      "index": 32,
+      "joints": {
+        "shoulderPitchDeg": 40.744,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 53.476,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 40.744,
+        "direction": [
+          0.0,
+          0.652676,
+          -0.757637
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.182749,
+          0.337862
+        ],
+        "hand": [
+          -0.208938,
+          0.283745,
+          0.220624
+        ]
+      }
+    },
+    {
+      "index": 33,
+      "joints": {
+        "shoulderPitchDeg": 42.017,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 53.715,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 42.017,
+        "direction": [
+          0.0,
+          0.66935,
+          -0.742947
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.187418,
+          0.341975
+        ],
+        "hand": [
+          -0.209581,
+          0.29041,
+          0.227658
+        ]
+      }
+    },
+    {
+      "index": 34,
+      "joints": {
+        "shoulderPitchDeg": 43.29,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 53.954,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 43.29,
+        "direction": [
+          0.0,
+          0.685693,
+          -0.727891
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.191994,
+          0.346191
+        ],
+        "hand": [
+          -0.21022,
+          0.296902,
+          0.234827
+        ]
+      }
+    },
+    {
+      "index": 35,
+      "joints": {
+        "shoulderPitchDeg": 44.563,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 54.192,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 44.563,
+        "direction": [
+          0.0,
+          0.701698,
+          -0.712475
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.196475,
+          0.350507
+        ],
+        "hand": [
+          -0.210856,
+          0.303216,
+          0.242127
+        ]
+      }
+    },
+    {
+      "index": 36,
+      "joints": {
+        "shoulderPitchDeg": 45.837,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 54.431,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 45.837,
+        "direction": [
+          0.0,
+          0.717356,
+          -0.696707
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.20086,
+          0.354922
+        ],
+        "hand": [
+          -0.211488,
+          0.309351,
+          0.249554
+        ]
+      }
+    },
+    {
+      "index": 37,
+      "joints": {
+        "shoulderPitchDeg": 47.062,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 54.511,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 47.062,
+        "direction": [
+          0.0,
+          0.732093,
+          -0.681205
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.204986,
+          0.359263
+        ],
+        "hand": [
+          -0.211698,
+          0.315491,
+          0.256439
+        ]
+      }
+    },
+    {
+      "index": 38,
+      "joints": {
+        "shoulderPitchDeg": 48.288,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 54.59,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 48.288,
+        "direction": [
+          0.0,
+          0.746494,
+          -0.665392
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.209018,
+          0.36369
+        ],
+        "hand": [
+          -0.211907,
+          0.321477,
+          0.263449
+        ]
+      }
+    },
+    {
+      "index": 39,
+      "joints": {
+        "shoulderPitchDeg": 49.513,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 54.67,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 49.513,
+        "direction": [
+          0.0,
+          0.760554,
+          -0.649274
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.212955,
+          0.368203
+        ],
+        "hand": [
+          -0.212116,
+          0.327308,
+          0.270582
+        ]
+      }
+    },
+    {
+      "index": 40,
+      "joints": {
+        "shoulderPitchDeg": 50.739,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 54.749,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 50.739,
+        "direction": [
+          0.0,
+          0.774267,
+          -0.632859
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.216795,
+          0.372799
+        ],
+        "hand": [
+          -0.212325,
+          0.332981,
+          0.277832
+        ]
+      }
+    },
+    {
+      "index": 41,
+      "joints": {
+        "shoulderPitchDeg": 51.964,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 54.829,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 51.964,
+        "direction": [
+          0.0,
+          0.787625,
+          -0.616155
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.220535,
+          0.377477
+        ],
+        "hand": [
+          -0.212533,
+          0.338494,
+          0.285198
+        ]
+      }
+    },
+    {
+      "index": 42,
+      "joints": {
+        "shoulderPitchDeg": 53.19,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 54.908,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 53.19,
+        "direction": [
+          0.0,
+          0.800622,
+          -0.599169
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.224174,
+          0.382233
+        ],
+        "hand": [
+          -0.212741,
+          0.343843,
+          0.292675
+        ]
+      }
+    },
+    {
+      "index": 43,
+      "joints": {
+        "shoulderPitchDeg": 54.415,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 54.988,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 54.415,
+        "direction": [
+          0.0,
+          0.813254,
+          -0.581909
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.227711,
+          0.387065
+        ],
+        "hand": [
+          -0.212948,
+          0.349028,
+          0.30026
+        ]
+      }
+    },
+    {
+      "index": 44,
+      "joints": {
+        "shoulderPitchDeg": 55.641,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 55.068,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 55.641,
+        "direction": [
+          0.0,
+          0.825513,
+          -0.564383
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.231144,
+          0.391973
+        ],
+        "hand": [
+          -0.213155,
+          0.354045,
+          0.307948
+        ]
+      }
+    },
+    {
+      "index": 45,
+      "joints": {
+        "shoulderPitchDeg": 56.866,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 55.147,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 56.866,
+        "direction": [
+          0.0,
+          0.837395,
+          -0.546598
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.234471,
+          0.396953
+        ],
+        "hand": [
+          -0.213362,
+          0.358893,
+          0.315738
+        ]
+      }
+    },
+    {
+      "index": 46,
+      "joints": {
+        "shoulderPitchDeg": 58.092,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 55.227,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 58.092,
+        "direction": [
+          0.0,
+          0.848894,
+          -0.528563
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.23769,
+          0.402002
+        ],
+        "hand": [
+          -0.213568,
+          0.363569,
+          0.323624
+        ]
+      }
+    },
+    {
+      "index": 47,
+      "joints": {
+        "shoulderPitchDeg": 59.317,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 55.306,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 59.317,
+        "direction": [
+          0.0,
+          0.860004,
+          -0.510287
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.240801,
+          0.40712
+        ],
+        "hand": [
+          -0.213774,
+          0.368072,
+          0.331603
+        ]
+      }
+    },
+    {
+      "index": 48,
+      "joints": {
+        "shoulderPitchDeg": 60.543,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 55.386,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 60.543,
+        "direction": [
+          0.0,
+          0.870721,
+          -0.491777
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.243802,
+          0.412302
+        ],
+        "hand": [
+          -0.213979,
+          0.3724,
+          0.339671
+        ]
+      }
+    },
+    {
+      "index": 49,
+      "joints": {
+        "shoulderPitchDeg": 61.768,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 55.465,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 61.768,
+        "direction": [
+          0.0,
+          0.88104,
+          -0.473042
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.246691,
+          0.417548
+        ],
+        "hand": [
+          -0.214184,
+          0.376552,
+          0.347824
+        ]
+      }
+    },
+    {
+      "index": 50,
+      "joints": {
+        "shoulderPitchDeg": 62.994,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 55.545,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 62.994,
+        "direction": [
+          0.0,
+          0.890955,
+          -0.454091
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.249467,
+          0.422854
+        ],
+        "hand": [
+          -0.214389,
+          0.380524,
+          0.356059
+        ]
+      }
+    },
+    {
+      "index": 51,
+      "joints": {
+        "shoulderPitchDeg": 64.219,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 55.625,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 64.219,
+        "direction": [
+          0.0,
+          0.900463,
+          -0.434932
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.25213,
+          0.428219
+        ],
+        "hand": [
+          -0.214593,
+          0.384317,
+          0.364371
+        ]
+      }
+    },
+    {
+      "index": 52,
+      "joints": {
+        "shoulderPitchDeg": 65.445,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 55.704,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 65.445,
+        "direction": [
+          0.0,
+          0.909559,
+          -0.415574
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.254677,
+          0.433639
+        ],
+        "hand": [
+          -0.214796,
+          0.387928,
+          0.372757
+        ]
+      }
+    },
+    {
+      "index": 53,
+      "joints": {
+        "shoulderPitchDeg": 66.67,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 55.784,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 66.67,
+        "direction": [
+          0.0,
+          0.918239,
+          -0.396026
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.257107,
+          0.439113
+        ],
+        "hand": [
+          -0.215,
+          0.391356,
+          0.381213
+        ]
+      }
+    },
+    {
+      "index": 54,
+      "joints": {
+        "shoulderPitchDeg": 67.895,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 55.863,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 67.895,
+        "direction": [
+          0.0,
+          0.926499,
+          -0.376297
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.25942,
+          0.444637
+        ],
+        "hand": [
+          -0.215202,
+          0.394599,
+          0.389734
+        ]
+      }
+    },
+    {
+      "index": 55,
+      "joints": {
+        "shoulderPitchDeg": 69.121,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 55.943,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 69.121,
+        "direction": [
+          0.0,
+          0.934335,
+          -0.356396
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.261614,
+          0.450209
+        ],
+        "hand": [
+          -0.215405,
+          0.397657,
+          0.398316
+        ]
+      }
+    },
+    {
+      "index": 56,
+      "joints": {
+        "shoulderPitchDeg": 70.346,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 56.023,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 70.346,
+        "direction": [
+          0.0,
+          0.941744,
+          -0.336331
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.263688,
+          0.455827
+        ],
+        "hand": [
+          -0.215607,
+          0.400529,
+          0.406956
+        ]
+      }
+    },
+    {
+      "index": 57,
+      "joints": {
+        "shoulderPitchDeg": 71.572,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 56.102,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 71.572,
+        "direction": [
+          0.0,
+          0.948722,
+          -0.316113
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.265642,
+          0.461488
+        ],
+        "hand": [
+          -0.215809,
+          0.403212,
+          0.41565
+        ]
+      }
+    },
+    {
+      "index": 58,
+      "joints": {
+        "shoulderPitchDeg": 72.797,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 56.182,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 72.797,
+        "direction": [
+          0.0,
+          0.955265,
+          -0.29575
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.267474,
+          0.46719
+        ],
+        "hand": [
+          -0.21601,
+          0.405707,
+          0.424393
+        ]
+      }
+    },
+    {
+      "index": 59,
+      "joints": {
+        "shoulderPitchDeg": 74.023,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 56.261,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 74.023,
+        "direction": [
+          0.0,
+          0.961372,
+          -0.275252
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.269184,
+          0.472929
+        ],
+        "hand": [
+          -0.216211,
+          0.408012,
+          0.433181
+        ]
+      }
+    },
+    {
+      "index": 60,
+      "joints": {
+        "shoulderPitchDeg": 75.248,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 56.341,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 75.248,
+        "direction": [
+          0.0,
+          0.967039,
+          -0.254628
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.270771,
+          0.478704
+        ],
+        "hand": [
+          -0.216411,
+          0.410126,
+          0.442011
+        ]
+      }
+    },
+    {
+      "index": 61,
+      "joints": {
+        "shoulderPitchDeg": 76.474,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 56.42,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 76.474,
+        "direction": [
+          0.0,
+          0.972264,
+          -0.233887
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.272234,
+          0.484512
+        ],
+        "hand": [
+          -0.216611,
+          0.41205,
+          0.450877
+        ]
+      }
+    },
+    {
+      "index": 62,
+      "joints": {
+        "shoulderPitchDeg": 77.699,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 56.5,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 77.699,
+        "direction": [
+          0.0,
+          0.977044,
+          -0.21304
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.273572,
+          0.490349
+        ],
+        "hand": [
+          -0.21681,
+          0.413781,
+          0.459777
+        ]
+      }
+    },
+    {
+      "index": 63,
+      "joints": {
+        "shoulderPitchDeg": 78.925,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 56.58,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 78.925,
+        "direction": [
+          0.0,
+          0.981376,
+          -0.192095
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.274785,
+          0.496213
+        ],
+        "hand": [
+          -0.217009,
+          0.415321,
+          0.468705
+        ]
+      }
+    },
+    {
+      "index": 64,
+      "joints": {
+        "shoulderPitchDeg": 80.15,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 56.659,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 80.15,
+        "direction": [
+          0.0,
+          0.98526,
+          -0.171062
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.275873,
+          0.502103
+        ],
+        "hand": [
+          -0.217208,
+          0.416667,
+          0.477658
+        ]
+      }
+    },
+    {
+      "index": 65,
+      "joints": {
+        "shoulderPitchDeg": 81.376,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 56.739,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 81.376,
+        "direction": [
+          0.0,
+          0.988693,
+          -0.149951
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.276834,
+          0.508014
+        ],
+        "hand": [
+          -0.217406,
+          0.417821,
+          0.486631
+        ]
+      }
+    },
+    {
+      "index": 66,
+      "joints": {
+        "shoulderPitchDeg": 82.601,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 56.818,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 82.601,
+        "direction": [
+          0.0,
+          0.991674,
+          -0.128771
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.277669,
+          0.513944
+        ],
+        "hand": [
+          -0.217604,
+          0.418781,
+          0.49562
+        ]
+      }
+    },
+    {
+      "index": 67,
+      "joints": {
+        "shoulderPitchDeg": 83.827,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 56.898,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 83.827,
+        "direction": [
+          0.0,
+          0.994202,
+          -0.107532
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.278376,
+          0.519891
+        ],
+        "hand": [
+          -0.217802,
+          0.419548,
+          0.504622
+        ]
+      }
+    },
+    {
+      "index": 68,
+      "joints": {
+        "shoulderPitchDeg": 85.052,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 56.977,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 85.052,
+        "direction": [
+          0.0,
+          0.996274,
+          -0.086245
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.278957,
+          0.525852
+        ],
+        "hand": [
+          -0.217999,
+          0.420121,
+          0.513631
+        ]
+      }
+    },
+    {
+      "index": 69,
+      "joints": {
+        "shoulderPitchDeg": 86.278,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 57.057,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 86.278,
+        "direction": [
+          0.0,
+          0.997891,
+          -0.064917
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.279409,
+          0.531823
+        ],
+        "hand": [
+          -0.218195,
+          0.4205,
+          0.522645
+        ]
+      }
+    },
+    {
+      "index": 70,
+      "joints": {
+        "shoulderPitchDeg": 87.503,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 57.137,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 87.503,
+        "direction": [
+          0.0,
+          0.999051,
+          -0.04356
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.279734,
+          0.537803
+        ],
+        "hand": [
+          -0.218391,
+          0.420686,
+          0.531657
+        ]
+      }
+    },
+    {
+      "index": 71,
+      "joints": {
+        "shoulderPitchDeg": 88.729,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 57.216,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 88.729,
+        "direction": [
+          0.0,
+          0.999754,
+          -0.022183
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.279931,
+          0.543789
+        ],
+        "hand": [
+          -0.218587,
+          0.420679,
+          0.540666
+        ]
+      }
+    },
+    {
+      "index": 72,
+      "joints": {
+        "shoulderPitchDeg": 89.954,
+        "shoulderYawDeg": 0.0,
+        "shoulderRollDeg": 0.0,
+        "elbowFlexDeg": 57.296,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 89.954,
+        "direction": [
+          0.0,
+          1.0,
+          -0.000796
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.0,
+          0.28,
+          0.549777
+        ],
+        "hand": [
+          -0.218782,
+          0.420478,
+          0.549665
+        ]
+      }
+    },
+    {
+      "index": 73,
+      "joints": {
+        "shoulderPitchDeg": 87.456,
+        "shoulderYawDeg": -3.056,
+        "shoulderRollDeg": -2.222,
+        "elbowFlexDeg": 57.296,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 87.459,
+        "direction": [
+          0.053308,
+          0.997594,
+          -0.04433
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.014926,
+          0.279326,
+          0.537588
+        ],
+        "hand": [
+          -0.195892,
+          0.431486,
+          0.539316
+        ]
+      }
+    },
+    {
+      "index": 74,
+      "joints": {
+        "shoulderPitchDeg": 84.957,
+        "shoulderYawDeg": -6.112,
+        "shoulderRollDeg": -4.444,
+        "elbowFlexDeg": 57.296,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 84.986,
+        "direction": [
+          0.106465,
+          0.990467,
+          -0.087405
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.02981,
+          0.277331,
+          0.525527
+        ],
+        "hand": [
+          -0.172119,
+          0.441093,
+          0.528092
+        ]
+      }
+    },
+    {
+      "index": 75,
+      "joints": {
+        "shoulderPitchDeg": 82.458,
+        "shoulderYawDeg": -9.167,
+        "shoulderRollDeg": -6.665,
+        "elbowFlexDeg": 57.296,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 82.555,
+        "direction": [
+          0.159318,
+          0.978687,
+          -0.129573
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.044609,
+          0.274032,
+          0.513719
+        ],
+        "hand": [
+          -0.147538,
+          0.449171,
+          0.516148
+        ]
+      }
+    },
+    {
+      "index": 76,
+      "joints": {
+        "shoulderPitchDeg": 79.959,
+        "shoulderYawDeg": -12.223,
+        "shoulderRollDeg": -8.887,
+        "elbowFlexDeg": 57.296,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 80.189,
+        "direction": [
+          0.211719,
+          0.962362,
+          -0.170393
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.059281,
+          0.269461,
+          0.50229
+        ],
+        "hand": [
+          -0.122232,
+          0.455609,
+          0.503657
+        ]
+      }
+    },
+    {
+      "index": 77,
+      "joints": {
+        "shoulderPitchDeg": 77.461,
+        "shoulderYawDeg": -15.279,
+        "shoulderRollDeg": -11.109,
+        "elbowFlexDeg": 57.296,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 77.911,
+        "direction": [
+          0.263517,
+          0.941645,
+          -0.209435
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.073785,
+          0.263661,
+          0.491358
+        ],
+        "hand": [
+          -0.096292,
+          0.460317,
+          0.490803
+        ]
+      }
+    },
+    {
+      "index": 78,
+      "joints": {
+        "shoulderPitchDeg": 74.962,
+        "shoulderYawDeg": -18.335,
+        "shoulderRollDeg": -13.331,
+        "elbowFlexDeg": 57.296,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 75.742,
+        "direction": [
+          0.314567,
+          0.916728,
+          -0.246289
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.088079,
+          0.256684,
+          0.481039
+        ],
+        "hand": [
+          -0.069812,
+          0.463227,
+          0.477783
+        ]
+      }
+    },
+    {
+      "index": 79,
+      "joints": {
+        "shoulderPitchDeg": 72.463,
+        "shoulderYawDeg": -21.39,
+        "shoulderRollDeg": -15.553,
+        "elbowFlexDeg": 57.296,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 73.706,
+        "direction": [
+          0.364721,
+          0.887842,
+          -0.280562
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.102122,
+          0.248596,
+          0.471443
+        ],
+        "hand": [
+          -0.042896,
+          0.464294,
+          0.464801
+        ]
+      }
+    },
+    {
+      "index": 80,
+      "joints": {
+        "shoulderPitchDeg": 69.965,
+        "shoulderYawDeg": -24.446,
+        "shoulderRollDeg": -17.774,
+        "elbowFlexDeg": 57.296,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 71.827,
+        "direction": [
+          0.413839,
+          0.855256,
+          -0.311888
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.115875,
+          0.239472,
+          0.462671
+        ],
+        "hand": [
+          -0.015651,
+          0.463499,
+          0.452065
+        ]
+      }
+    },
+    {
+      "index": 81,
+      "joints": {
+        "shoulderPitchDeg": 67.466,
+        "shoulderYawDeg": -27.502,
+        "shoulderRollDeg": -19.996,
+        "elbowFlexDeg": 57.296,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 70.128,
+        "direction": [
+          0.461779,
+          0.819274,
+          -0.339928
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.129298,
+          0.229397,
+          0.45482
+        ],
+        "hand": [
+          0.011808,
+          0.460849,
+          0.439786
+        ]
+      }
+    },
+    {
+      "index": 82,
+      "joints": {
+        "shoulderPitchDeg": 64.967,
+        "shoulderYawDeg": -30.558,
+        "shoulderRollDeg": -22.218,
+        "elbowFlexDeg": 57.296,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 68.631,
+        "direction": [
+          0.508407,
+          0.780228,
+          -0.364373
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.142354,
+          0.218464,
+          0.447976
+        ],
+        "hand": [
+          0.039365,
+          0.456374,
+          0.428175
+        ]
+      }
+    },
+    {
+      "index": 83,
+      "joints": {
+        "shoulderPitchDeg": 62.468,
+        "shoulderYawDeg": -33.614,
+        "shoulderRollDeg": -24.44,
+        "elbowFlexDeg": 57.296,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 67.359,
+        "direction": [
+          0.553588,
+          0.738482,
+          -0.384948
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.155005,
+          0.206775,
+          0.442214
+        ],
+        "hand": [
+          0.066898,
+          0.450133,
+          0.417437
+        ]
+      }
+    },
+    {
+      "index": 84,
+      "joints": {
+        "shoulderPitchDeg": 59.97,
+        "shoulderYawDeg": -36.669,
+        "shoulderRollDeg": -26.662,
+        "elbowFlexDeg": 57.296,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 66.333,
+        "direction": [
+          0.597195,
+          0.694422,
+          -0.401417
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.167215,
+          0.194438,
+          0.437603
+        ],
+        "hand": [
+          0.094282,
+          0.44221,
+          0.407771
+        ]
+      }
+    },
+    {
+      "index": 85,
+      "joints": {
+        "shoulderPitchDeg": 57.471,
+        "shoulderYawDeg": -39.725,
+        "shoulderRollDeg": -28.883,
+        "elbowFlexDeg": 57.296,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 65.57,
+        "direction": [
+          0.639104,
+          0.648459,
+          -0.413578
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.178949,
+          0.181568,
+          0.434198
+        ],
+        "hand": [
+          0.121392,
+          0.432713,
+          0.399364
+        ]
+      }
+    },
+    {
+      "index": 86,
+      "joints": {
+        "shoulderPitchDeg": 54.972,
+        "shoulderYawDeg": -42.781,
+        "shoulderRollDeg": -31.105,
+        "elbowFlexDeg": 57.296,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 65.085,
+        "direction": [
+          0.679196,
+          0.601017,
+          -0.421273
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.190175,
+          0.168285,
+          0.432044
+        ],
+        "hand": [
+          0.148098,
+          0.421775,
+          0.39239
+        ]
+      }
+    },
+    {
+      "index": 87,
+      "joints": {
+        "shoulderPitchDeg": 52.473,
+        "shoulderYawDeg": -45.837,
+        "shoulderRollDeg": -33.327,
+        "elbowFlexDeg": 57.296,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 64.888,
+        "direction": [
+          0.717356,
+          0.552538,
+          -0.424385
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.20086,
+          0.154711,
+          0.431172
+        ],
+        "hand": [
+          0.174273,
+          0.409549,
+          0.387006
+        ]
+      }
+    },
+    {
+      "index": 88,
+      "joints": {
+        "shoulderPitchDeg": 49.975,
+        "shoulderYawDeg": -48.892,
+        "shoulderRollDeg": -35.549,
+        "elbowFlexDeg": 57.296,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 64.986,
+        "direction": [
+          0.753476,
+          0.503468,
+          -0.42284
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.210973,
+          0.140971,
+          0.431605
+        ],
+        "hand": [
+          0.199786,
+          0.396209,
+          0.383351
+        ]
+      }
+    },
+    {
+      "index": 89,
+      "joints": {
+        "shoulderPitchDeg": 47.476,
+        "shoulderYawDeg": -51.948,
+        "shoulderRollDeg": -37.771,
+        "elbowFlexDeg": 57.296,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 65.379,
+        "direction": [
+          0.787454,
+          0.454264,
+          -0.416607
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.220487,
+          0.127194,
+          0.43335
+        ],
+        "hand": [
+          0.224511,
+          0.381948,
+          0.38154
+        ]
+      }
+    },
+    {
+      "index": 90,
+      "joints": {
+        "shoulderPitchDeg": 44.977,
+        "shoulderYawDeg": -55.004,
+        "shoulderRollDeg": -39.992,
+        "elbowFlexDeg": 57.296,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 66.065,
+        "direction": [
+          0.819192,
+          0.405378,
+          -0.405701
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.229374,
+          0.113506,
+          0.436404
+        ],
+        "hand": [
+          0.248322,
+          0.366971,
+          0.381666
+        ]
+      }
+    },
+    {
+      "index": 91,
+      "joints": {
+        "shoulderPitchDeg": 42.478,
+        "shoulderYawDeg": -58.06,
+        "shoulderRollDeg": -42.214,
+        "elbowFlexDeg": 57.296,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 67.034,
+        "direction": [
+          0.8486,
+          0.357264,
+          -0.39018
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.237608,
+          0.100034,
+          0.44075
+        ],
+        "hand": [
+          0.271094,
+          0.351499,
+          0.383795
+        ]
+      }
+    },
+    {
+      "index": 92,
+      "joints": {
+        "shoulderPitchDeg": 39.98,
+        "shoulderYawDeg": -61.115,
+        "shoulderRollDeg": -44.436,
+        "elbowFlexDeg": 57.296,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 68.275,
+        "direction": [
+          0.875595,
+          0.310365,
+          -0.370144
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.245167,
+          0.086902,
+          0.44636
+        ],
+        "hand": [
+          0.292709,
+          0.335759,
+          0.387965
+        ]
+      }
+    },
+    {
+      "index": 93,
+      "joints": {
+        "shoulderPitchDeg": 37.481,
+        "shoulderYawDeg": -64.171,
+        "shoulderRollDeg": -46.658,
+        "elbowFlexDeg": 57.296,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 69.773,
+        "direction": [
+          0.9001,
+          0.265112,
+          -0.345738
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.252028,
+          0.074231,
+          0.453193
+        ],
+        "hand": [
+          0.31305,
+          0.319984,
+          0.394187
+        ]
+      }
+    },
+    {
+      "index": 94,
+      "joints": {
+        "shoulderPitchDeg": 34.982,
+        "shoulderYawDeg": -67.227,
+        "shoulderRollDeg": -48.88,
+        "elbowFlexDeg": 57.296,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 71.51,
+        "direction": [
+          0.922046,
+          0.221922,
+          -0.317146
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.258173,
+          0.062138,
+          0.461199
+        ],
+        "hand": [
+          0.332007,
+          0.304411,
+          0.402443
+        ]
+      }
+    },
+    {
+      "index": 95,
+      "joints": {
+        "shoulderPitchDeg": 32.484,
+        "shoulderYawDeg": -70.283,
+        "shoulderRollDeg": -51.101,
+        "elbowFlexDeg": 57.296,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 73.465,
+        "direction": [
+          0.941369,
+          0.181191,
+          -0.284593
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.263583,
+          0.050733,
+          0.470314
+        ],
+        "hand": [
+          0.349476,
+          0.289274,
+          0.412685
+        ]
+      }
+    },
+    {
+      "index": 96,
+      "joints": {
+        "shoulderPitchDeg": 29.985,
+        "shoulderYawDeg": -73.339,
+        "shoulderRollDeg": -53.323,
+        "elbowFlexDeg": 57.296,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 75.621,
+        "direction": [
+          0.958016,
+          0.143292,
+          -0.248341
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.268244,
+          0.040122,
+          0.480465
+        ],
+        "hand": [
+          0.365358,
+          0.274801,
+          0.424835
+        ]
+      }
+    },
+    {
+      "index": 97,
+      "joints": {
+        "shoulderPitchDeg": 27.486,
+        "shoulderYawDeg": -76.394,
+        "shoulderRollDeg": -55.545,
+        "elbowFlexDeg": 57.296,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 77.955,
+        "direction": [
+          0.971938,
+          0.10857,
+          -0.208685
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.272143,
+          0.0304,
+          0.491568
+        ],
+        "hand": [
+          0.379562,
+          0.261214,
+          0.438789
+        ]
+      }
+    },
+    {
+      "index": 98,
+      "joints": {
+        "shoulderPitchDeg": 24.987,
+        "shoulderYawDeg": -79.45,
+        "shoulderRollDeg": -57.767,
+        "elbowFlexDeg": 57.296,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 80.447,
+        "direction": [
+          0.983096,
+          0.077341,
+          -0.165954
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.275267,
+          0.021655,
+          0.503533
+        ],
+        "hand": [
+          0.392006,
+          0.248722,
+          0.454414
+        ]
+      }
+    },
+    {
+      "index": 99,
+      "joints": {
+        "shoulderPitchDeg": 22.489,
+        "shoulderYawDeg": -82.506,
+        "shoulderRollDeg": -59.989,
+        "elbowFlexDeg": 57.296,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 83.079,
+        "direction": [
+          0.991458,
+          0.049887,
+          -0.120506
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.277608,
+          0.013968,
+          0.516258
+        ],
+        "hand": [
+          0.402615,
+          0.237518,
+          0.471551
+        ]
+      }
+    },
+    {
+      "index": 100,
+      "joints": {
+        "shoulderPitchDeg": 19.99,
+        "shoulderYawDeg": -85.562,
+        "shoulderRollDeg": -62.21,
+        "elbowFlexDeg": 57.296,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 85.83,
+        "direction": [
+          0.997001,
+          0.026455,
+          -0.072723
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.27916,
+          0.007407,
+          0.529637
+        ],
+        "hand": [
+          0.411324,
+          0.227777,
+          0.490018
+        ]
+      }
+    },
+    {
+      "index": 101,
+      "joints": {
+        "shoulderPitchDeg": 17.491,
+        "shoulderYawDeg": -88.617,
+        "shoulderRollDeg": -64.432,
+        "elbowFlexDeg": 57.296,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 88.681,
+        "direction": [
+          0.999709,
+          0.007252,
+          -0.023012
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.279918,
+          0.00203,
+          0.543557
+        ],
+        "hand": [
+          0.418078,
+          0.219653,
+          0.509612
+        ]
+      }
+    },
+    {
+      "index": 102,
+      "joints": {
+        "shoulderPitchDeg": 14.992,
+        "shoulderYawDeg": -91.673,
+        "shoulderRollDeg": -66.654,
+        "elbowFlexDeg": 57.296,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 91.616,
+        "direction": [
+          0.999574,
+          -0.007554,
+          0.028206
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.279881,
+          -0.002115,
+          0.557898
+        ],
+        "hand": [
+          0.422831,
+          0.213276,
+          0.530111
+        ]
+      }
+    },
+    {
+      "index": 103,
+      "joints": {
+        "shoulderPitchDeg": 12.494,
+        "shoulderYawDeg": -94.729,
+        "shoulderRollDeg": -68.876,
+        "elbowFlexDeg": 57.296,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 94.617,
+        "direction": [
+          0.996596,
+          -0.017835,
+          0.080491
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.279047,
+          -0.004994,
+          0.572537
+        ],
+        "hand": [
+          0.425548,
+          0.208748,
+          0.551276
+        ]
+      }
+    },
+    {
+      "index": 104,
+      "joints": {
+        "shoulderPitchDeg": 9.995,
+        "shoulderYawDeg": -97.785,
+        "shoulderRollDeg": -71.098,
+        "elbowFlexDeg": 57.296,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 97.666,
+        "direction": [
+          0.990784,
+          -0.023509,
+          0.133397
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.277419,
+          -0.006583,
+          0.587351
+        ],
+        "hand": [
+          0.426204,
+          0.206145,
+          0.572858
+        ]
+      }
+    },
+    {
+      "index": 105,
+      "joints": {
+        "shoulderPitchDeg": 7.496,
+        "shoulderYawDeg": -100.841,
+        "shoulderRollDeg": -73.319,
+        "elbowFlexDeg": 57.296,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 100.747,
+        "direction": [
+          0.982154,
+          -0.024537,
+          0.186469
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.275003,
+          -0.00687,
+          0.602211
+        ],
+        "hand": [
+          0.424786,
+          0.205514,
+          0.594597
+        ]
+      }
+    },
+    {
+      "index": 106,
+      "joints": {
+        "shoulderPitchDeg": 4.997,
+        "shoulderYawDeg": -103.896,
+        "shoulderRollDeg": -75.541,
+        "elbowFlexDeg": 57.296,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 103.842,
+        "direction": [
+          0.970732,
+          -0.020921,
+          0.239253
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.271805,
+          -0.005858,
+          0.616991
+        ],
+        "hand": [
+          0.421291,
+          0.20687,
+          0.61623
+        ]
+      }
+    },
+    {
+      "index": 107,
+      "joints": {
+        "shoulderPitchDeg": 2.499,
+        "shoulderYawDeg": -106.952,
+        "shoulderRollDeg": -77.763,
+        "elbowFlexDeg": 57.296,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 106.936,
+        "direction": [
+          0.956549,
+          -0.012712,
+          0.291295
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.267834,
+          -0.003559,
+          0.631563
+        ],
+        "hand": [
+          0.415729,
+          0.210197,
+          0.63749
+        ]
+      }
+    },
+    {
+      "index": 108,
+      "joints": {
+        "shoulderPitchDeg": 0.0,
+        "shoulderYawDeg": -110.008,
+        "shoulderRollDeg": -79.985,
+        "elbowFlexDeg": 57.296,
+        "wristPitchDeg": 0.0,
+        "wristYawDeg": 0.0
+      },
+      "arm": {
+        "elevationDeg": 110.008,
+        "direction": [
+          0.939645,
+          0.0,
+          0.34215
+        ]
+      },
+      "points": {
+        "shoulder": [
+          0.0,
+          0.0,
+          0.55
+        ],
+        "elbow": [
+          0.263101,
+          0.0,
+          0.645802
+        ],
+        "hand": [
+          0.408119,
+          0.215449,
+          0.658115
+        ]
+      }
+    }
+  ]
+}
