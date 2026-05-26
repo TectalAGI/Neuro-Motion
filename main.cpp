@@ -11,6 +11,11 @@ struct SensorFrame {
     double abs_accel;
 };
 
+struct SnapEvent {
+    double time;
+    double acceleration;
+};
+
 std::vector<SensorFrame> parsePhyphox(const std::string& filepath) {
     std::vector<SensorFrame> frames;
     std::ifstream file(filepath);
@@ -46,25 +51,45 @@ int main() {
     double voltage = 0.0;
     double decay = 0.5;
     double threshold = 20.0;
-    double reset = 0.0;
+    double reset_val = 0.0;
 
-    std::cout << "\n--- Detected Snaps ---" << std::endl;
-    int snap_count = 0;
+    std::vector<SnapEvent> snaps;
 
     for (const auto& frame : frames) {
         voltage += frame.abs_accel;
         voltage *= decay;
 
         if (voltage > threshold) {
-            std::cout << "SNAP at t=" << frame.time
-                      << "s | acceleration=" << frame.abs_accel
-                      << " m/s^2" << std::endl;
-            voltage = reset;
-            snap_count++;
+            snaps.push_back({frame.time, frame.abs_accel});
+            voltage = reset_val;
         }
     }
 
-    std::cout << "\nTotal snaps detected: " << snap_count << std::endl;
+    // Print snaps
+    std::cout << "\n--- Detected Snaps ---" << std::endl;
+    for (const auto& snap : snaps) {
+        std::cout << "SNAP at t=" << snap.time
+                  << "s | acceleration=" << snap.acceleration
+                  << " m/s^2" << std::endl;
+    }
+    std::cout << "\nTotal snaps detected: " << snaps.size() << std::endl;
+
+    // Write JSON output
+    std::ofstream json_file("results.json");
+    json_file << "{\n";
+    json_file << "  \"total_snaps\": " << snaps.size() << ",\n";
+    json_file << "  \"joint\": \"shoulder\",\n";
+    json_file << "  \"snaps\": [\n";
+    for (size_t i = 0; i < snaps.size(); i++) {
+        json_file << "    {\"time\": " << snaps[i].time
+                  << ", \"acceleration\": " << snaps[i].acceleration << "}";
+        if (i < snaps.size() - 1) json_file << ",";
+        json_file << "\n";
+    }
+    json_file << "  ]\n";
+    json_file << "}\n";
+    json_file.close();
+    std::cout << "Results written to results.json" << std::endl;
 
     // Cleanup
     mj_deleteData(data);

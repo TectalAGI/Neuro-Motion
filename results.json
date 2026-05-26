@@ -1,0 +1,23 @@
+{
+  "total_snaps": 17,
+  "joint": "shoulder",
+  "snaps": [
+    {"time": 13.2197, "acceleration": 20.7033},
+    {"time": 14.4698, "acceleration": 22.525},
+    {"time": 14.5098, "acceleration": 21.6818},
+    {"time": 15.5399, "acceleration": 23.0516},
+    {"time": 15.5699, "acceleration": 24.8481},
+    {"time": 15.6, "acceleration": 23.382},
+    {"time": 15.76, "acceleration": 20.5762},
+    {"time": 16.4901, "acceleration": 22.7427},
+    {"time": 16.5101, "acceleration": 28.2406},
+    {"time": 16.5301, "acceleration": 31.2054},
+    {"time": 16.5501, "acceleration": 28.8045},
+    {"time": 16.5801, "acceleration": 23.3688},
+    {"time": 16.6101, "acceleration": 23.5216},
+    {"time": 17.3301, "acceleration": 22.6039},
+    {"time": 20.3605, "acceleration": 20.9743},
+    {"time": 20.4005, "acceleration": 21.7206},
+    {"time": 51.6744, "acceleration": 20.6508}
+  ]
+}
