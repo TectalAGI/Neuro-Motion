@@ -1,52 +1,38 @@
 # Neuro-Motion
 A biologically inspired, neuromorphic control model designed to predict and reduce joint instability in people with hypermobility (hsd) using low-latency. Scalable to real hardware.
 
-## Shoulder ROM presentation demo
+## Desktop app
 
-A browser-based 3D presentation prototype lives in `demo/`. It focuses on:
+The active shoulder ROM prototype is a desktop-only workspace in `mujoco_arm_demo/desktop_shoulder_workspace.py`. It uses Python, NumPy, and Matplotlib.
 
-- upper-arm shoulder ROM rather than elbow ROM
-- a premium browser presentation surface built with React, Vite, and React Three Fiber
-- direct pose data exported from the MuJoCo scaffold in `mujoco_arm_demo/arm.xml`
-- a reference-band warning when the MuJoCo-derived upper-arm elevation exceeds the current scaffold baseline
+### Run the desktop app
 
-## Setup
+```bash
+python3 -m venv .venv
+.venv/bin/pip install -r mujoco_arm_demo/desktop_requirements.txt
+.venv/bin/python mujoco_arm_demo/desktop_shoulder_workspace.py
+```
 
-These steps assume you are starting from the repository root.
+The desktop app includes:
 
-### 1. Create the Python environment
+- a native 3D shoulder workspace window
+- `phi` and `theta` controls
+- editable safe-range parameters
+- bundled playback of `mujoco_arm_demo/data/JayceArmData1.csv`
+- safe / outside-safe range feedback without using `npm` or a web browser
+
+The bundled playback source came from Phyphox running on an iPhone 17 Pro Max mounted on the lateral shoulder, with the top of the phone toward the shoulder and the bottom toward the elbow.
+
+On Windows, you can also double-click `run_desktop_app.bat` from the repository root after Python is installed.
+
+## MuJoCo viewer
+
+If you want the native MuJoCo viewer instead of the desktop controller, run:
 
 ```bash
 python3 -m venv .venv
 .venv/bin/pip install -r mujoco_arm_demo/requirements.txt
-```
-
-### 2. Export MuJoCo shoulder data
-
-```bash
-.venv/bin/python mujoco_arm_demo/export_shoulder_motion.py
-```
-
-### 3. Start the 3D web app
-
-```bash
-cd demo
-npm install
-npm run dev
-```
-
-Then open [http://localhost:4173](http://localhost:4173) in a browser.
-
-## MuJoCo viewer
-
-If you want the native MuJoCo viewer instead of the web app, run:
-
-```bash
 .venv/bin/mjpython mujoco_arm_demo/run_arm.py
 ```
 
 On macOS, `run_arm.py` must be launched with `mjpython` so MuJoCo can open the passive viewer on the main thread.
-
-### Notes on the defaults
-
-The current prototype is driven by exported MuJoCo shoulder samples rather than a clinical flexion table. In its current form, the scaffold tops out at roughly 110 degrees of upper-arm elevation, so it should be treated as a shoulder-space prototype rather than a full 180-degree clinical shoulder-flexion model.
